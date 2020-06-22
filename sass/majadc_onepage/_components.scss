@@ -1,0 +1,169 @@
+body {
+  color: $dark;
+  background: $pink;
+}
+.btn-primary {
+  @include hover-focus() {
+    background-color: $dark_blue;
+    border-color: $dark_blue;
+    color: $white;
+  }
+}
+.btn-secondary {
+  color: $dark;
+  @include hover-focus() {
+    background-color: $blue;
+    color: $white;
+  }
+}
+.form-control {
+  color: $dark_blue;
+  background: $pink;
+  &:focus {
+    background: color.change($green, $alpha:0.3);
+    border-color: $green;
+  }
+}
+.mdc-navbar-main {
+  box-shadow: 0 1px 0 0 $dark;
+  
+}
+.mdc-navbar-main .navbar-nav .nav-link {
+  color: $white;
+  @include hover-focus() {
+    color: $dark;
+  }
+}
+.mdc-navbar-main .navbar-toggler-icon {
+  color: $white;
+}
+
+.mcd-icon-brightness {
+  width: 3em;
+  height: 3em;
+}
+.masthead  {
+  padding-top: 5.375rem;
+  .card {
+    background: transparent;
+  }
+  .card-body {
+    background: linear-gradient(to top, $pink, color.change($pink, $alpha:0.5));
+  }
+}
+.mcd-image-masthead {
+  position: relative;
+}
+.mcd-wrapper-image-sun {
+  padding-top: 3rem;
+}
+
+.mcd-image-sun {
+  width: 150px;
+  height: 150px;
+  color: $yellow;
+  animation: sun_anime 5s linear infinite;
+}
+
+.mcd-wrapper-image-heart {
+  transform: translateX(-40px) translateY(-60px)  rotateZ(-20deg);
+}
+.mcd-image-heart   {
+  width: 75px;
+  height: 75px;
+  color: $pink;
+  animation: heart_anime 2s ease-out alternate infinite;
+}
+@keyframes sun_anime {
+  from {
+    transform: rotatez(0);
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+@keyframes heart_anime {
+  from{
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.mcd-projects__item {
+  .card {
+    border-color: $blue;
+    background: linear-gradient(to top, $blue 10%, 40%, $light 80%);
+    @include hover-focus() {
+      border-color: $green;
+    }
+  }
+  .project-icon {
+    color: $yellow;
+  }
+  .card-img-overlay {
+    background: color.change($green, $alpha:0.95);
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    @include hover-focus() {
+      opacity: 1;
+    }
+    a {
+      display: block;
+      color: $white;
+      @include hover-focus() {
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+.mdc-projects-modal .close {
+  position: absolute;
+  top: 0rem;
+  right: 0.5rem;
+  color: $blue;
+  font-size: 2.5rem;
+  @include hover-focus() {
+    color: $dark_blue;
+  }
+}
+
+.footer {
+  .card {
+    background: transparent;
+    a {
+      color: $light_blue;
+      @include hover-focus() {
+        color: $yellow;
+        text-decoration: none;
+      }
+    }
+    
+  }
+  .card-header {
+    background-color: transparent;
+    i {
+      color: color.change($blue, $alpha:0.3);
+    }
+  } 
+  .card-body {
+    background: color.change($blue, $alpha:0.3);
+  }
+  
+}
+.mdc-menu-social {
+  font-size: 2rem;
+  a {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    text-align: center;
+    @include hover-focus() {
+      color: $yellow;
+      background-color: color.change($blue, $alpha:0.3);
+    }
+  }
+}

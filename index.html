@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap One-Page</title>
+    <script src="https://kit.fontawesome.com/31544a3f14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style_sunshine.css">
+  </head>
+  <body id="page-home">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-primary mdc-navbar-main" id="navbarMain">
+     <div class="container">
+
+      <a href="#home" class="navbar-brand">
+        <svg class="mcd-icon-brightness text-warning">
+          <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+        </svg>
+        <span class="text-warning font-weight-bold">sunshine ray</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuMain">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+     </div>
+    </nav>
+
+    <header id="home" class="masthead bg-light text-light text-center">
+      <div class="container">
+        <div class="card border-0 rounded-0">
+          <div class="row no-gutters">
+
+            <div class="col-md-4 d-none d-md-block mcd-image-masthead">
+             <div class="mcd-wrapper-image-sun">
+              <svg class="mcd-image-sun">
+                <use href="images\sprite_sunshine.svg#brightness-high"></use>
+              </svg>
+             </div>
+              <div class="mcd-wrapper-image-heart">
+                <svg class="mcd-image-heart"  viewBox="0 0 16 16">
+                  <use href="images\sprite_sunshine.svg#heart-fill"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="card-body py-5  border-0 rounded-0 text-dark h-100">
+                <h2 class="card-title display-4">We bring the sun into your hearts.</h2>
+                <p class="card-text lead pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatibus.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
+    <section id="about" class="my-5 pt-5">
+      <div class="container">
+        <div class="card border-0 rounded-0">
+          <div class="card-header bg-primary text-center rounded-0 border-bottom border-dark">
+            <svg class="mcd-icon-brightness text-warning">
+              <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+            </svg>
+            <h2 class="h1 text-white">About Us</h2>
+          </div>
+          <div class="card-body bg-light py-5 text-dark">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reprehenderit molestiae blanditiis dolore maxime minima reiciendis iste exercitationem doloremque. Consectetur nisi voluptatibus aliquam quas ipsum tempora dolores sapiente ut expedita?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="my-5 pt-5">
+      <div class="container">
+        <h2 class="h1 text-center text-dark">Our sunshine rays</h2>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
+           <figure class="card rounded-0 py-5">
+            <svg class="project-icon project-icon-door-closed">
+              <use href="images\sprite_sunshine.svg#door-closed"></use>
+            </svg>
+            <figcaption class="card-img-overlay border-0 text-white text-center d-flex align-items-center flex-column justify-content-center" data-toggle="modal" data-target="#project-perspective">
+                <svg class="mcd-icon-brightness text-warning d-block">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h3 class="card-title">We open new perspectives!</h3>
+            </figcaption>
+           </figure>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
+            <figure class="card bg-light rounded-0 py-5">
+             <svg class="project-icon project-icon-egg">
+               <use href="images\sprite_sunshine.svg#egg"></use>
+             </svg>
+             <figcaption class="card-img-overlay border-0 text-white text-center d-flex align-items-center flex-column justify-content-center" data-toggle="modal" data-target="#project-questions">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h3 class="card-title">We aren't afraid of the tough questions!</h3>
+             </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
+            <figure class="card bg-light rounded-0 py-5">
+             <svg class="project-icon project-icon-eye">
+               <use href="images\sprite_sunshine.svg#eye"></use>
+             </svg>
+             <figcaption class="card-img-overlay border-0 text-white text-center d-flex align-items-center flex-column justify-content-center" data-toggle="modal" data-target="#project-visions">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h3 class="card-title">We see what others do not!</h3>
+             </figcaption>
+            </figure>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
+            <figure class="card bg-light rounded-0 py-5">
+             <svg class="project-icon project-icon-mic">
+               <use href="images\sprite_sunshine.svg#mic"></use>
+             </svg>
+             <figcaption class="card-img-overlay border-0 text-white text-center d-flex align-items-center flex-column justify-content-center"  data-toggle="modal" data-target="#project-ideas">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h3 class="card-title">We always speak what we believe!</h3>
+             </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
+            <figure class="card bg-light rounded-0 py-5">
+             <svg class="project-icon project-droplet-half">
+               <use href="images\sprite_sunshine.svg#droplet-half"></use>
+             </svg>
+             <figcaption class="card-img-overlay border-0 text-white text-center d-flex align-items-center flex-column justify-content-center" data-toggle="modal" data-target="#project-choice">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h3 class="card-title">We always let you choose if the glass is half full or half empty!</h3>
+             </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
+            <figure class="card bg-light rounded-0 py-5">
+             <svg class="project-icon project-icon-volume-up">
+               <use href="images\sprite_sunshine.svg#volume-up"></use>
+             </svg>
+             <figcaption class="card-img-overlay border-0 text-white text-center d-flex align-items-center flex-column justify-content-center"  data-toggle="modal" data-target="#project-you">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h3 class="card-title">We always listen to your needs!</h3>
+             </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="my-5">
+      <div class="container">
+
+        <div class="card border-0 rounded-0">
+
+          <div class="card-header bg-primary text-center rounded-0 border-bottom border-dark">
+            <svg class="mcd-icon-brightness text-warning">
+              <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+            </svg>
+            <h2 class="h1 text-white">Contact</h2>
+          </div>
+
+          <div class="card-body bg-light py-5 text-dark">
+            <p class="h2 mb-4 text-primary text-center">Tell us about yourself!</p>
+            <form class="text-center">
+              
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-primary text-white border-primary rounded-0" id="nameLabel" aria-label="nameInput">Name</span>
+                  </div>
+                  <input type="text" class="form-control border-primary rounded-0" id="nameInput" aria-labelledby="nameLabel"/>
+                </div>
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-primary text-white border-primary rounded-0" id="emailLabel" aria-label="emailInput">E-mail</span>
+                  </div>
+                  <input type="email" class="form-control border-primary rounded-0" id="emailInput" aria-labelledby="emailLabel"/>
+                </div>
+
+                <div class="input-group flex-column mb-4">
+                  <div class="input-group-prepend d-block">
+                    <span class="input-group-text bg-primary text-white border-primary rounded-0" id="messageLabel" aria-label="messageTextarea">Message</span>
+                  </div>
+                  <textarea name="messageTextarea" aria-labelledby="messageLabel" class="form-control d-block w-100 rounded-0" id="messageTextarea" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" onclick="return false;" class="btn btn-primary rounded-0">Submit</button>
+            </form>
+          </div>
+
+        </div> 
+        
+      </div>
+      </section>
+      
+    
+    <footer class="footer bg-dark text-success mt-5 py-5">
+      <div class="container">
+
+        <section class="row">
+          <div class="col-12">
+            <h3 class="h2 text-center pb-4">Let's Get In Touch!</h3>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 rounded-0 border-0 text-center">
+              <h4 class="card-header rounded-0 border-0"><i class="fas fa-home text-small"></i> Address</h4>
+              <div class="card-body border border-success text-light d-flex h-100 align-items-center justify-content-center">
+                <address>
+                  <strong class="text-warning">sunshine ray</strong><br/>
+                  666 Sunpath St.<br/>
+                  Sky 77666<br/>
+                  Earth
+                </address>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 rounded-0 border-0 text-center">
+              <h4 class="card-header rounded-0 border-0"><i class="fas fa-envelope"></i> Email</h4>
+              <div class="card-body border border-success text-light d-flex h-100 align-items-center justify-content-center">
+                <p class="m-0"><a href="#!">sunshineray@sun.com</a></p>
+              </div>
+            </div>  
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 rounded-0 border-0 text-center">
+              <h4 class="card-header rounded-0 border-0"><i class="fas fa-phone-square-alt"></i> Phone</h4>
+              <div class="card-body border border-success text-light d-flex h-100 align-items-center justify-content-center">
+                <p class="m-0">666 777 666</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="h2 text-center mt-5 pb-4">We are everywhere!</h3>
+          <ul class="nav mdc-menu-social justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#!"><i class="fab fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#!"><i class="fab fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#!"><i class="fab fa-pinterest-p"></i></a></li>
+          </ul>
+        </section>
+
+      </div>
+    </footer>
+
+
+    <div id="project-perspective" class="modal fade mdc-projects-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-danger border-dark py-5">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-8 m-auto">
+              <div class="modal-header d-block text-center border-light">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h5 class="modal-title display-4">New perspectives.</h5>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio deserunt eum voluptates labore totam accusantium aliquid est ut expedita.</p>
+              </div>
+              <div class="modal-footer border-light justify-content-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+             </div>
+           </div>
+         </div>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-questions" class="modal fade mdc-projects-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-danger border-dark py-5">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-8 m-auto">
+              <div class="modal-header d-block text-center border-light">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h5 class="modal-title display-4">Ask! We are ready for you!</h5>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio deserunt eum voluptates labore totam accusantium aliquid est ut expedita.</p>
+              </div>
+              <div class="modal-footer border-light justify-content-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+             </div>
+           </div>
+         </div>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="project-visions" class="modal fade mdc-projects-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-danger border-dark py-5">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-8 m-auto">
+              <div class="modal-header d-block text-center border-light">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h5 class="modal-title display-4">Our visions.</h5>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio deserunt eum voluptates labore totam accusantium aliquid est ut expedita.</p>
+              </div>
+              <div class="modal-footer border-light justify-content-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+             </div>
+           </div>
+         </div>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-ideas" class="modal fade mdc-projects-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-danger border-dark py-5">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-8 m-auto">
+              <div class="modal-header d-block text-center border-light">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h5 class="modal-title display-4">Our Ideas.</h5>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio deserunt eum voluptates labore totam accusantium aliquid est ut expedita.</p>
+              </div>
+              <div class="modal-footer border-light justify-content-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+             </div>
+           </div>
+         </div>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-choice" class="modal fade mdc-projects-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-danger border-dark py-5">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-8 m-auto">
+              <div class="modal-header d-block text-center border-light">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h5 class="modal-title display-4">Your needs are important for us!</h5>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio deserunt eum voluptates labore totam accusantium aliquid est ut expedita.</p>
+              </div>
+              <div class="modal-footer border-light justify-content-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+             </div>
+           </div>
+         </div>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-you" class="modal fade mdc-projects-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-danger border-dark py-5">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-8 m-auto">
+              <div class="modal-header d-block text-center border-light">
+                <svg class="mcd-icon-brightness text-warning">
+                  <use href="images\sprite_sunshine.svg#brightness-alt-high-fill"></use>
+                </svg>
+                <h5 class="modal-title display-4">Your opinion matters for us!</h5>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio deserunt eum voluptates labore totam accusantium aliquid est ut expedita.</p>
+              </div>
+              <div class="modal-footer border-light justify-content-center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+             </div>
+           </div>
+         </div>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+      $('body').scrollspy({ target: '#navbarMain'});
+      $('#navbarMain a').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+          const hash = this.hash;
+          const heightNavbar = $("#navbarMain").height();
+          const marginSection = parseInt($(`${$(this).attr('href')}`).css('margin-top'));
+          let offset = $(hash).offset().top - heightNavbar - marginSection;
+          $('html, body').animate({
+            scrollTop: offset
+          }, 900, function () {
+            if ( history.pushState ) {
+              history.pushState(null, null, hash);
+            } else {
+              location.hash = hash;
+            }
+          
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

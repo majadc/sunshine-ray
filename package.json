@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap_onepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass/main.scss:css/style_sunshine.css",
+    "compile:sass": "sass sass/main.scss css/style.compile.css",
+    "prefix:css": "postcss css/style.compile.css --use autoprefixer -o css/style.prefix.css",
+    "compress:css": "sass --style=compressed css/style.prefix.css css/style_sunshine.css",
+    "build": "npm-run-all compile:sass prefix:css compress:css "
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majadc/sunshine-ray.git"
+  },
+  "keywords": [
+    "one page",
+    "bootstrap"
+  ],
+  "author": "majadc",
+  "license": "ISC"
+}
