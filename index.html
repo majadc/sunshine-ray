@@ -101,7 +101,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
-            <figure class="card bg-light rounded-0 py-5">
+            <figure class="card rounded-0 py-5">
              <svg class="project-icon project-icon-egg">
                <use href="images\sprite_sunshine.svg#egg"></use>
              </svg>
@@ -115,7 +115,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
-            <figure class="card bg-light rounded-0 py-5">
+            <figure class="card rounded-0 py-5">
              <svg class="project-icon project-icon-eye">
                <use href="images\sprite_sunshine.svg#eye"></use>
              </svg>
@@ -130,7 +130,7 @@
 
 
           <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
-            <figure class="card bg-light rounded-0 py-5">
+            <figure class="card rounded-0 py-5">
              <svg class="project-icon project-icon-mic">
                <use href="images\sprite_sunshine.svg#mic"></use>
              </svg>
@@ -144,7 +144,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
-            <figure class="card bg-light rounded-0 py-5">
+            <figure class="card rounded-0 py-5">
              <svg class="project-icon project-droplet-half">
                <use href="images\sprite_sunshine.svg#droplet-half"></use>
              </svg>
@@ -158,7 +158,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 my-5 mcd-projects__item">
-            <figure class="card bg-light rounded-0 py-5">
+            <figure class="card rounded-0 py-5">
              <svg class="project-icon project-icon-volume-up">
                <use href="images\sprite_sunshine.svg#volume-up"></use>
              </svg>
@@ -447,27 +447,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>
-      $('body').scrollspy({ target: '#navbarMain'});
-      $('#navbarMain a').on('click', function (e) {
-        if (this.hash !== '') {
-          e.preventDefault();
-          const hash = this.hash;
-          const heightNavbar = $("#navbarMain").height();
-          const marginSection = parseInt($(`${$(this).attr('href')}`).css('margin-top'));
-          let offset = $(hash).offset().top - heightNavbar - marginSection;
-          $('html, body').animate({
-            scrollTop: offset
-          }, 900, function () {
-            if ( history.pushState ) {
-              history.pushState(null, null, hash);
-            } else {
-              location.hash = hash;
-            }
-          
-          });
-        }
-      });
-    </script>
+    <script src="js/vendors/svg4everybody.min.js"></script>
+    <script src="js/babel/sunshine.js"></script>
+    
+    
   </body>
 </html>

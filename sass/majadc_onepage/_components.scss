@@ -41,6 +41,7 @@ body {
 .mcd-icon-brightness {
   width: 3em;
   height: 3em;
+  fill: $yellow;
 }
 .masthead  {
   padding-top: 5.375rem;
@@ -62,6 +63,7 @@ body {
   width: 150px;
   height: 150px;
   color: $yellow;
+  fill: $yellow;
   animation: sun_anime 5s linear infinite;
 }
 
@@ -72,6 +74,7 @@ body {
   width: 75px;
   height: 75px;
   color: $pink;
+  fill: $pink;
   animation: heart_anime 2s ease-out alternate infinite;
 }
 @keyframes sun_anime {
@@ -93,19 +96,27 @@ body {
 .mcd-projects__item {
   .card {
     border-color: $blue;
-    background: linear-gradient(to top, $blue 10%, 40%, $light 80%);
+    background: $light_blue;
+    @supports ( background: linear-gradient(to top, $blue 10%, 40%, $light 80%) ) {
+      background: linear-gradient(to top, $blue 10%, 40%, $light 80%);
+    }
+    
     @include hover-focus() {
       border-color: $green;
     }
   }
   .project-icon {
     color: $yellow;
+    fill: $yellow;
   }
   .card-img-overlay {
     background: color.change($green, $alpha:0.95);
     opacity: 0;
     transition: all 0.5s ease;
     cursor: pointer;
+    h3.card-title {
+      width: 100%;
+    }
     @include hover-focus() {
       opacity: 1;
     }

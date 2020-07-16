@@ -8,8 +8,8 @@
     "compile:sass": "sass sass/main.scss css/style.compile.css",
     "prefix:css": "postcss css/style.compile.css --use autoprefixer -o css/style.prefix.css",
     "compress:css": "sass --style=compressed css/style.prefix.css css/style_sunshine.css",
-    "build": "npm-run-all compile:sass prefix:css compress:css "
-
+    "build:css": "npm-run-all compile:sass prefix:css compress:css ",
+    "babel": "babel js/sunshine.js --out-dir js/babel --presets=@babel/env"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,13 @@
     "bootstrap"
   ],
   "author": "majadc",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4"
+  }
 }

@@ -7974,6 +7974,7 @@ body {
 .mcd-icon-brightness {
   width: 3em;
   height: 3em;
+  fill: #ffd507;
 }
 
 .masthead {
@@ -7998,6 +7999,7 @@ body {
   width: 150px;
   height: 150px;
   color: #ffd507;
+  fill: #ffd507;
   animation: sun_anime 5s linear infinite;
 }
 
@@ -8009,6 +8011,7 @@ body {
   width: 75px;
   height: 75px;
   color: #eccee2;
+  fill: #eccee2;
   animation: heart_anime 2s ease-out alternate infinite;
 }
 
@@ -8030,19 +8033,28 @@ body {
 }
 .mcd-projects__item .card {
   border-color: #00a3e1;
-  background: linear-gradient(to top, #00a3e1 10%, 40%, #b2ceff 80%);
+  background: #b2ceff;
+}
+@supports (background: linear-gradient(to top, #00a3e1 10%, 40%, #b2ceff 80%)) {
+  .mcd-projects__item .card {
+    background: linear-gradient(to top, #00a3e1 10%, 40%, #b2ceff 80%);
+  }
 }
 .mcd-projects__item .card:hover, .mcd-projects__item .card:focus {
   border-color: #8da751;
 }
 .mcd-projects__item .project-icon {
   color: #ffd507;
+  fill: #ffd507;
 }
 .mcd-projects__item .card-img-overlay {
   background: rgba(141, 167, 81, 0.95);
   opacity: 0;
   transition: all 0.5s ease;
   cursor: pointer;
+}
+.mcd-projects__item .card-img-overlay h3.card-title {
+  width: 100%;
 }
 .mcd-projects__item .card-img-overlay:hover, .mcd-projects__item .card-img-overlay:focus {
   opacity: 1;
